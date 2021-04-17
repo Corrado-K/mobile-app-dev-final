@@ -1,5 +1,7 @@
 {
   "name": "voterX",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

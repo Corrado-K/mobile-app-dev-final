@@ -1,0 +1,56 @@
+.ion-color-cold {
+    --ion-color-base: var(--ion-color-cold);
+    --ion-color-base-rgb: var(--ion-color-cold-rgb);
+    --ion-color-contrast: var(--ion-color-cold-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-cold-contrast-rgb);
+    --ion-color-shade: var(--ion-color-cold-shade);
+    --ion-color-tint: var(--ion-color-cold-tint);
+}
+
+ion-content{
+    --ion-background-color:  var(--ion-color-cold);
+}
+
+*{
+    font-family: 'Segoe UI';
+}
+
+
+#container{
+    margin: -5% 0 0 0;
+    text-align: center  ;
+    justify-content: center;
+}
+
+h3{
+    // text-align: center;
+    margin: 0 0 7% 0;
+    font-size: 25px;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+}
+
+ion-input{
+    background: white;
+    text-align: left;
+    width: 70%;
+    color:black;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin: 0 15% 10% 15%;
+    --padding-start: 5%;
+   
+}
+
+ion-button{
+    --background-color:pink;
+    margin:10% 20% 0 20%;
+    margin-right: 20%;
+    width: 50%;
+    border-radius: 0px;
+
+}
+

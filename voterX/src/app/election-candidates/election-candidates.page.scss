@@ -1,0 +1,49 @@
+
+.ion-color-cold {
+    --ion-color-base: var(--ion-color-cold);
+    --ion-color-base-rgb: var(--ion-color-cold-rgb);
+    --ion-color-contrast: var(--ion-color-cold-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-cold-contrast-rgb);
+    --ion-color-shade: var(--ion-color-cold-shade);
+    --ion-color-tint: var(--ion-color-cold-tint);
+}
+
+*{
+    font-family:'Segoe UI';
+}
+
+
+ion-header{
+    height:10%;
+}
+
+ion-toolbar{
+    --background: var(--ion-color-cold);
+    color:white;
+    height: 100%;
+}
+
+ion-content{
+    --ion-background-color:  #F9F9F9;
+}
+
+
+#container{
+    margin: 5% 0 0 0;
+    // text-align: center  ;
+    justify-content: center;
+}
+
+
+ion-card{
+    background: white !important;
+    color: black;
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+ion-card ion-icon{
+    margin-top: 2%;
+    margin-right: 3%;
+}

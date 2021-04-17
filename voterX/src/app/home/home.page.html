@@ -1,20 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+ 
+  <div style="position: absolute; margin:0; top: 0%;height: 50%; width: 100%">
+    <ion-card id="card" style="margin: 0%; height: 100% ">
+      
+    </ion-card>
   </div>
+  <div style="position: absolute; text-align: center; background-color: #D8D8D8; margin:0; bottom: 0%;height: 50%; width: 100%" id="container">
+
+    <h2 class="ion-text-center">Who will you vote for???</h2>
+
+    <ion-button routerLink="/login"   fill="solid" color="cold" size="large" shape="round" id="getStarted"> <!-- (click)="onClick()" -->
+      Get started
+    </ion-button>
+
+  </div>
+
 </ion-content>

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <div style="position: absolute; margin:0; top: 0%;height: 50%; width: 100%">
+    <ion-card id="card" style="margin: 0%; height: 100% ">
+      
+    </ion-card>
+  </div>
+  <div style="position: absolute; text-align: center; background-color: #D8D8D8; margin:0; bottom: 0%;height: 50%; width: 100%" id="container">
+
+    <div style=" text-align: center; margin:0; top: 10%; height: 100%; width: 100%">
+
+      <ion-item>
+        <ion-label  position="floating">Email</ion-label>
+        <ion-input  clearInput [(ngModel)]='email' ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input  clearInput [(ngModel)]='password'></ion-input>
+      </ion-item>
+
+      <ion-button (click)="login()" fill="solid"  color="cold" size="large" shape="round" >  <!--    -->  
+        Login
+      </ion-button>
+      <p id="signup" class="ion-margin-top ion-padding">Need an account? Sign up <strong routerLink="/signup">here</strong></p>
+      <!-- <a>Forgot Password?</a> -->
+      <div class="err-message" *ngIf = 'attempts < 5 && isSuccess == false'>
+        <small>{{errMessage}}, {{ attempts }} attempts remaining</small>
+      </div>
+      <!-- <p class="ion-margin-top ion-padding-top login-error" *ngIf = 'attempts > 0 && isPasswordCorrect == false'>Password Incorrect</p> -->
+    </div>
+
+    
+  
+  
+    
+    
+
+  </div>
+
+</ion-content>

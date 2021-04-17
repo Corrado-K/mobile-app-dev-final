@@ -11,6 +11,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'election-home',
+    loadChildren: () => import('./election-home/election-home.module').then( m => m.ElectionHomePageModule)
+  },
+  {
+    path: 'election-pin',
+    loadChildren: () => import('./election-pin/election-pin.module').then( m => m.ElectionPinPageModule)
+  },
+  {
+    path: 'election-candidates',
+    loadChildren: () => import('./election-candidates/election-candidates.module').then( m => m.ElectionCandidatesPageModule)
+  },
+  {
+    path: 'election-vote',
+    loadChildren: () => import('./election-vote/election-vote.module').then( m => m.ElectionVotePageModule)
+  },
 ];
 
 @NgModule({

@@ -3,6 +3,14 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** cold **/
+  --ion-color-cold: #0874B1;
+  --ion-color-cold-rgb: 8,116,177;
+  --ion-color-cold-contrast: #ffffff;
+  --ion-color-cold-contrast-rgb: 255,255,255;
+  --ion-color-cold-shade: #07669c;
+  --ion-color-cold-tint: #2182b9;
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -182,6 +190,8 @@
     --ion-item-background: #000000;
 
     --ion-card-background: #1c1c1d;
+
+    
   }
 
   .ios ion-modal {
