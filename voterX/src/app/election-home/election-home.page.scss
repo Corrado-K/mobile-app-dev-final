@@ -29,6 +29,20 @@ h3{
     font-size: 30px;
 }
 
+ion-text{
+    display: inline;
+}
+
+h2{
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+p{
+    color: var(--ion-color-cold-shade) ;
+}
+
 ion-input{
     background: white;
     text-align: left;

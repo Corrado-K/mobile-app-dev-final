@@ -1,4 +1,9 @@
 <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="election-home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
   
 </ion-header>
 
@@ -9,9 +14,9 @@
 
     <h3>Enter election pin</h3>
  
-  <ion-input type="text" placeholder="PIN"></ion-input>
+  <ion-input [(ngModel)]='pin' type="text" placeholder="PIN"></ion-input>
 
-  <ion-button fill="solid" color="dark" size="large" shape="round" > <!-- (click)="onClick()" -->
+  <ion-button (click)="validatePin()" fill="solid" color="dark" size="large" shape="round" > <!-- (click)="onClick()" -->
     Submit
   </ion-button>
 

@@ -15,6 +15,11 @@ ion-content{
     font-family: 'Segoe UI';
 }
 
+ion-toolbar{
+    --background: var(--ion-color-cold);
+    --ion-color-base: transparent !important;
+ }
+
 
 #container{
     margin: -5% 0 0 0;
@@ -54,3 +59,8 @@ ion-button{
 
 }
 
+.my-custom-class .alert-wrapper {
+    background: #e5e5e5;
+    color: var(--ion-color-cold);
+    font-size: medium;
+  }

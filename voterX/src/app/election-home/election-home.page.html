@@ -9,13 +9,24 @@
  
   <ion-input type="text" placeholder="Search">&nbsp;<ion-icon name="search-outline"></ion-icon></ion-input>
 
-  <ion-card>
+  <div *ngFor = "let obj of organisations">
+    <ion-card>
     
-    <ion-card-content>
-        <ion-icon name="wine" slot="start"></ion-icon>
-        <!-- <ion-img [src]="../assets/img/home.jfif"></ion-img> -->
-    </ion-card-content>
-  </ion-card>
+      <ion-card-content [routerLink]="['/election-pin']" (click)="getelectionDetails(obj)">
+        <!-- <ion-icon name="wine" slot="start"></ion-icon> -->
+          <!-- <ion-img [src]='../../assets/img/voterX.png' style="border: circle;"></ion-img> -->
+          <ion-text color="primary">
+            <h2>{{obj.name}}</h2>
+            <p>
+              {{obj.election_desc}}
+            </p>
+          </ion-text>
+      </ion-card-content>
+    </ion-card>
+   </div> 
+
+
+  
   </div>
 
 
