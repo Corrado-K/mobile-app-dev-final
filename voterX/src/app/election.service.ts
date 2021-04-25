@@ -33,6 +33,10 @@ export class ElectionService {
     return this.data['pin'];
   }
 
+  electionName(){
+    return this.data['election_desc'];
+  }
+
   electionDetail(){
     return this.data;
   }

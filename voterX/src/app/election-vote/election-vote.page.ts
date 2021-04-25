@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Router } from "@angular/router";
+import { ElectionService } from "../election.service";
+
+
 
 @Component({
   selector: 'app-election-vote',
@@ -7,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ElectionVotePage implements OnInit {
 
-  constructor() { }
+  constructor(private fire: AngularFirestore, private election: ElectionService) { }
 
   ngOnInit() {
   }
