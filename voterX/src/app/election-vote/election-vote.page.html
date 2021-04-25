@@ -7,18 +7,27 @@
 <ion-content>
 
   <div id="container">
-   
-  <ion-card>
-    <ion-card-content>
-        <ion-icon name="wine" slot="start"></ion-icon>
-        Name
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dolorem, adipisci necessitatibus! Fugiat amet rerum recusandae
-        quidem suscipit ea! Atque consequatur vero quas similique 
-        ducimus iure nobis consequuntur non, quis pariatur.
-        <!-- <ion-img [src]="../assets/img/home.jfif"></ion-img> -->
-    </ion-card-content>
-  </ion-card>
+    <!-- <div ngFor="let obj of candidates"> -->
+      <ion-card>
+        <ion-card-content>
+          <ion-grid fixed>
+          <ion-row>
+            <ion-col>Name: </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Position: </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Message: </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Total votes: </ion-col>
+          </ion-row>
+        </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    <!-- </div> -->
+  
 
   <h2>Thanks for voting!!!</h2>
   </div>
