@@ -21,13 +21,14 @@ ion-header{
 
 ion-toolbar{
     --background: var(--ion-color-cold);
+    --ion-color-base: transparent !important;
     color:white;
     height: 100%;
     
 }
 
 ion-content{
-    --ion-background-color:  #F9F9F9;
+    --ion-background-color: var(--ion-color-cold) ;
 }
 
 
@@ -41,6 +42,7 @@ ion-content{
 
 h2{
     margin:20%;
+    color: white;
 }
 
 

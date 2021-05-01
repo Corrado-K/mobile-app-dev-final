@@ -34,7 +34,15 @@ const routes: Routes = [
   {
     path: 'election-vote',
     loadChildren: () => import('./election-vote/election-vote.module').then( m => m.ElectionVotePageModule)
+  },  {
+    path: 'create-candidate',
+    loadChildren: () => import('./create-candidate/create-candidate.module').then( m => m.CreateCandidatePageModule)
   },
+  {
+    path: 'create-election',
+    loadChildren: () => import('./create-election/create-election.module').then( m => m.CreateElectionPageModule)
+  },
+
 ];
 
 @NgModule({

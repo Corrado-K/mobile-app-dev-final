@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Vote</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="election-candidates"></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-title>Vote</ion-title> -->
   </ion-toolbar>
 </ion-header>
 
@@ -12,17 +15,17 @@
         <ion-card-content>
           <ion-grid fixed>
           <ion-row>
-            <ion-col>Name: </ion-col>
+            <ion-col>Name: {{cand.name}}</ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>Position: </ion-col>
+            <ion-col>Position: {{cand.position}}</ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>Message: </ion-col>
+            <ion-col>Message: {{cand.message}}</ion-col>
           </ion-row>
-          <ion-row>
-            <ion-col>Total votes: </ion-col>
-          </ion-row>
+          <!-- <ion-row aria-disabled="aria-disabled">
+            <ion-col>Total votes: {{cand.votes}}</ion-col>
+          </ion-row> -->
         </ion-grid>
         </ion-card-content>
       </ion-card>

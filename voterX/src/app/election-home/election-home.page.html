@@ -11,7 +11,6 @@
 
   <div *ngFor = "let obj of organisations">
     <ion-card>
-    
       <ion-card-content [routerLink]="['/election-pin']" (click)="getelectionDetails(obj)">
         <!-- <ion-icon name="wine" slot="start"></ion-icon> -->
           <!-- <ion-img [src]='../../assets/img/voterX.png' style="border: circle;"></ion-img> -->
@@ -23,11 +22,15 @@
           </ion-text>
       </ion-card-content>
     </ion-card>
-   </div> 
+  </div> 
 
 
   
   </div>
-
+  <div id="admin" >
+    <ion-fab-button [routerLink]="['/create-election']" color="light">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </div>
 
 </ion-content>

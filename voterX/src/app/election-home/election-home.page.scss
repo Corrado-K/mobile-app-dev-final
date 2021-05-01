@@ -24,6 +24,7 @@ ion-content{
 }
 
 h3{
+    color: white;
     text-align: center;
     margin-bottom: 5%;
     font-size: 30px;
@@ -37,6 +38,17 @@ h2{
     color: black;
     font-size: medium;
     font-weight: bold;
+}
+
+#admin{
+    position: fixed;
+    left: 80%;
+    bottom: 3%;
+    width: 100%;
+}
+
+#admin ion-fab-button{
+    margin-right: 0;
 }
 
 p{
