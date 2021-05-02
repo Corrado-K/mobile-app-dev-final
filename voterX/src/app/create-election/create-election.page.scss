@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+h1{
+    color: white;
+    font-weight: bolder;
+}
+
+ion-content{
+    --ion-background-color: #D8D8D8;
+}
+
+.ion-color-cold {
+    --ion-color-base: var(--ion-color-cold);
+    --ion-color-base-rgb: var(--ion-color-cold-rgb);
+    --ion-color-contrast: var(--ion-color-cold-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-cold-contrast-rgb);
+    --ion-color-shade: var(--ion-color-cold-shade);
+    --ion-color-tint: var(--ion-color-cold-tint);
+  }
+
+#card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    // background: var(--ion-color-cold);
+
+    background: url(../../assets/img/voterX_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+#container{
+    position: relative;
+    --ion-background-color: #D8D8D8;;
+}
+  
+#container h2{
+    color:red;
+    margin-top: 30%;
+  }
+  
+  
+ion-button{
+    color:white;
+    margin:10% 20% 10% 20%;
+    // margin-right: 20%;
+    width: 60%;
+    border-radius: 30px;
+
+    
+}
+
+p{
+    color: black;
+}
+  
+a{
+    color: black;
+    width: 70%;
+    text-align: left; 
+      
+    position: relative;
+    font-size: small !important;
+}
+
+ion-input{
+    text-align: left;
+    color:black;
+    // border-bottom: 1px solid var(--ion-color-cold);;
+    margin: 0 2% 0 2%;
+   
+}
+
+ion-toolbar{
+    --background: var(--ion-color-cold);
+    --ion-color-base: transparent !important;
+    color:white;
+}
+
+ion-item {
+    width: 96%;
+    margin: 0 2% 0 2%;
+
+    --color: rgb(64, 61, 61);
+    --background: rgba(111, 7, 7, 0);
+    
+}
+
+strong{
+    color: var(--ion-color-cold);
+}
+
+
+
+ion-label{
+    text-align: left;
+    color: black;
+    // margin-left: ;
+}

@@ -4,6 +4,7 @@ import { ElectionService } from "../election.service";
 import { Router } from "@angular/router";
 
 
+
 @Component({
   selector: 'app-election-home',
   templateUrl: './election-home.page.html',
