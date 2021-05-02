@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="election-home"></ion-back-button>
     </ion-buttons>   
-    <h1 style="text-align: center;">Votes</h1> 
+    <h1 style="text-align: center; margin: 10% 15% 0 0;">Votes</h1> 
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +11,6 @@
 
   <div id="container">
    
-<<<<<<< HEAD
     <div *ngFor = "let obj of candidates">
       <div *ngIf = "obj.election == elect" >
         <ion-card>
@@ -28,36 +27,14 @@
                   <ion-col>Message: {{obj.message}}</ion-col>
                 </ion-row>
               </ion-grid>
-              <ion-button (click)="vote(obj)" [routerLink]="['/election-vote']" size="small" color="success" fill="solid" shape="round">
-                Click me
+              <ion-button (click)="vote(obj)" [routerLink]="['/election-vote']" size="small" color="cold" fill="solid" shape="round">
+                Vote for me
               </ion-button>
           </ion-card-content>
         </ion-card>
       </div>  
     </div>
       
-  
-=======
-  <ion-card>
-    
-    <ion-card-content>
-        <ion-grid fixed>
-          <ion-row>
-            <ion-col>Name:</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col>Position:</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col>Message:</ion-col>
-          </ion-row>
-        </ion-grid>
-        <ion-button (click)="onClick()" expand="block" color="success" fill="solid" shape="round">
-          Vote
-        </ion-button>
-    </ion-card-content>
-  </ion-card>
->>>>>>> afca926b883f20654d01d6e60062788ee147c204
   </div>
 
 </ion-content>
